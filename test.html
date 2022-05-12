@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .test {
+            display: grid;
+            place-items: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border-style: ridge;
+            border-color: hsl(349, 71%, 52%);
+            background-image: linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+        }
+        .test button {
+            border-radius: 50%;
+            border: none;
+            height: 80%;
+            width: 80%;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .rps {
+            position: unset;
+        }
+        .declare-winner {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            align-items: center;
+            max-width: 550px;
+            /* height: 400px; */
+            margin: auto;
+            text-transform: uppercase;
+        }
+        
+        .judge {
+            text-align: center;
+            /* align-self: flex-end; */
+        }
+        .state, .picked {
+            color: white;
+            margin-bottom: 10px;
+        }
+        .judge-btn {
+            text-transform: uppercase;
+            padding: 7px 35px;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="test">
+        <button>
+            <img src="/images/icon-rock.svg" alt="">
+        </button>
+    </div> -->
+
+    <div class="declare-winner">
+        <div class="you">
+            <p class="picked">you picked</p>
+            <button class="rps paper" data-option="paper">
+                <img class="user-option" src="/images/icon-paper.svg" alt="" data-option="paper">
+            </button>
+        </div>
+        <div class="judge">
+            <h1 class="state">you lose</h1>
+            <button class="judge-btn">play again</button>
+        </div>
+        <div class="house">
+            <p class="picked">house picked</p>
+            <button class="rps scissors" data-option="scissors">
+                <img class="user-option" src="/images/icon-scissors.svg" alt="" data-option="scissors">
+            </button>
+        </div>
+    </div>
+    
+</body>
+</html>
