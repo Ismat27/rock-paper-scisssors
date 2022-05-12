@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - [View solution here](https://github.com/Ismat27/rock-paper-scisssors)
-- [View site here](https://your-live-site-url.com)
+- [View site here](https://smartdev-rockpaperscissors.netlify.app/)
 
 ## My process
 
